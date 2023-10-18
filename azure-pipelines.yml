@@ -12,10 +12,8 @@ pool:
 stages:
   - stage: Build
     jobs:
-    - job: BuildTheApp
-      steps:
-      - script: echo building the application
-  - stage: Dev
-    jobs:
-    - job: DevDeploy
+      - job: BuildApp
+        steps:
+          - script: echo building the application
+
 
