@@ -15,5 +15,6 @@ stages:
       - job: BuildApp
         steps:
           - script: echo building the application
+          - script: echo loading something
 
 
