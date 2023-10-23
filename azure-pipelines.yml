@@ -12,9 +12,4 @@ pool:
 stages:
   - stage: Build
     jobs:
-      - job: BuildApp
-        steps:
-          - script: echo building the application
-          - script: echo loading something
-
-
+      - job: compile-code
