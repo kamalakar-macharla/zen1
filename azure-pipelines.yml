@@ -14,5 +14,6 @@ stages:
     jobs:
       - job: CompileCode
   - stage: devDeploy
+    dependsOn: Build
     jobs:
       - job: DeploymentToDev
