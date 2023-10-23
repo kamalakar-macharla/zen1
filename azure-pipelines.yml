@@ -13,3 +13,6 @@ stages:
   - stage: Build
     jobs:
       - job: CompileCode
+  - stage: devDeploy
+    jobs:
+      - job: DeploymentToDev
